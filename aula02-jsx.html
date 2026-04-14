@@ -14,18 +14,46 @@
     <input type="text" id="email">
     <label for="">CAMPO 4:</label>
     <input type="password" id="senha">
+
+    <button inclick="mostrarDados()">Clique aqui para enviar os dados para o console</button>
     
+    <div id="resultado"></div>
+    <div id="resultado"></div>
+    <div id="resultado"></div>
+    <div id="resultado"></div>
+
+
+
+
 </body>
 
     <script>
+
+        let areaTexto = document.getElementById("resultado");
+
+        function mostrarDados(){
+
+
         let nome = document.getElementById("nome").value;
         let idade = document.getElementById("idade").value;
         let email = document.getElementById("email").value;
         let senha = document.getElementById("senha").value;
-
         console.log(nome);
         console.log(idade);
         console.log(email);
         console.log(senha);
+
+        let info1 = nome;
+        let info2 = idade;
+        let info3 = email;
+        let info4 = senha;
+       //PEGAMOS O .value PARA VER NO TEXTO
+       alert("você digitou: "+ mensagem);
+       areaTexto.innerHTML = "<h3>Voce digitou no info1: " + info1 + "</h3> <br>" 
+       areaTexto.innerHTML = "<h3>Voce digitou no info1: " + info2 + "</h3> <br>" 
+       areaTexto.innerHTML = "<h3>Voce digitou no info1: " + info3 + "</h3> <br>" 
+       areaTexto.innerHTML = "<h3>Voce digitou no info1: " + info4 + "</h3> <br>" 
+
+         }
     </script>
 </html>
